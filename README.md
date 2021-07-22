@@ -24,7 +24,6 @@
   Off-chain data storage APIs, DB server running on http://localhost:5000
 
 ### Add User
---
 add a single user data.
 
 * **`POST` /api/user** 
@@ -32,23 +31,23 @@ add a single user data.
 
 * **Success Response:**
 
-* **Code:** 200 <br />
-* **Content:** 
-  ```json
-  { 
-      "Message" : "User 0x00000000000001 added" 
-  }
-  ```
+  * **Code:** 200 <br />
+  * **Content:** 
+    ```json
+    { 
+        "Message" : "User 0x00000000000001 added" 
+    }
+    ```
 
 * **Error Response:**
 
-* **Code:** 500 <br />
-* **Content:** 
-  ```json
-  { 
-      "Message": "Add user failed",
-      "Error" : "...some errors..."
-  }    
+  * **Code:** 500 <br />
+  * **Content:** 
+    ```json
+    { 
+        "Message": "Add user failed",
+        "Error" : "...some errors..."
+    }    
 
 
 
@@ -68,36 +67,36 @@ get a single user data by given id.
 
 * **Success Response:**
 
-* **Code:** 200 <br />
-* **Content:** 
-  ```json
-  {
-      "id_address": "0x00000000000001",
-      "name": "RanchFarm AU",
-      "type": "Producer",
-      "location": "Sydney, NSW"
-  }
+  * **Code:** 200 <br />
+  * **Content:** 
+    ```json
+    {
+        "id_address": "0x00000000000001",
+        "name": "RanchFarm AU",
+        "type": "Producer",
+        "location": "Sydney, NSW"
+    }
   ```
 
 * **Error Response:**
 
-* **Code:** 500 <br />
-* **Content:** 
-  ```json
-  { 
-      "Message": "Unable to get user 0x00000000000001",
-      "Error" : "...some errors..."
-  }    
-  ```
+  * **Code:** 500 <br />
+  * **Content:** 
+    ```json
+    { 
+        "Message": "Unable to get user 0x00000000000001",
+        "Error" : "...some errors..."
+    }    
+    ```
 
-OR
+  OR
 
-* **Code:** 404 <br />
-* **Content:** 
-  ```json
-  { 
-      "Message" : "No record of user 0x00000000000001" 
-  }    
+  * **Code:** 404 <br />
+  * **Content:** 
+    ```json
+    { 
+        "Message" : "No record of user 0x00000000000001" 
+    }    
   ```
 
 
@@ -112,18 +111,18 @@ delete a single user data by given id.
 
 *  **URL Params**
 
- **Required:**
+  **Required:**
 
- `id=[0x00000000000001]`
+  `id=[0x00000000000001]`
 
 * **Success Response:**
 
-* **Code:** 200 <br />
-* **Content:** 
-  ```json
-  { 
-      "Message": "Delete user 0x00000000000001 successfully 
-  }    
+  * **Code:** 200 <br />
+  * **Content:** 
+    ```json
+    { 
+        "Message": "Delete user 0x00000000000001 successfully 
+    }    
   ```
 
 * **Error Response:**
