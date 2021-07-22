@@ -6,7 +6,7 @@
     - [Delete User by ID](#Delete-User-by-ID)
     - [Get Users](#Get-Users)
 
-## Getting Started
+# Getting Started
 **Install:** 
   ```
   npm install
@@ -20,7 +20,7 @@
   npm start
   ```
 
-## REST API
+# REST API
   Off-chain data storage APIs, DB server running on http://localhost:5000
 
 **Add User**
@@ -60,7 +60,7 @@ get a single user data by given id.
 * **`GET` /api/user/:id**
 
 
-*  **URL Params:**
+* **URL Params:**
    
   * **Required:** `id=[0x00000000000001]`
 
@@ -76,7 +76,16 @@ get a single user data by given id.
         "location": "Sydney, NSW"
     }
     ```
+* **Error Response:**
 
+  * **Code:** 500 <br />
+  * **Content:** 
+    ```json
+    { 
+        "Message": "Add user failed",
+        "Error" : "...some errors..."
+    }    
+    ```
 * **Error Response:**
 
   * **Code:** 500 <br />
