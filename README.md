@@ -65,7 +65,7 @@
     
     
     
-**deleteUserbyID `DELETE`** 
+**deleteUserbyID** 
 ----
   delete user data by given id.
 
