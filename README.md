@@ -143,8 +143,8 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-  * **Content:** 
-        ```json
+  * **Content:**
+  *         ```json
         [
             {
                 "id_address": "0x00000000000001",
@@ -160,6 +160,7 @@
             } 
         ]
         ```
+
  
 * **Error Response:**
 
