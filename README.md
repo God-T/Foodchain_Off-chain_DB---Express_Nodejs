@@ -23,7 +23,6 @@
   Off-chain data storage APIs.
 
 ### Add User
-----
   add a single user data.
 
 * **`POST` /api/user** 
