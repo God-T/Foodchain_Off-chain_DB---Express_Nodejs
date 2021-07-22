@@ -1,30 +1,21 @@
 # Foodchain_Off-chain_DB---Express_Nodejs
 
 - [REST API](#rest-api)
-    - [addUsers](#addUsers)
+    - [addUser](#addUser)
     - [getUserbyID](#getUserbyID)
-    - [getUsers](#getUsers)
     - [deleteUserbyID](#deleteUserbyID)
+    - [getUsers](#getUsers)
 
 
-## REST API
-**addUsers**
+# REST API
+
+**addUser**
 ----
-  Returns json data about a single user.
+  add a user.
 
 * **URL**
 
-  /users/:id
-
-* **Method:**
-
-  `GET`
-  
-*  **URL Params**
-
-   **Required:**
- 
-   `id=[integer]`
+  `GET` /api/user
 
 * **Data Params**
 
@@ -33,28 +24,10 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
+    **Content:** `{ Message : "User 0x00000000000000 added" }`
  
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
+    **Content:** `{ Message: "Add user failed", Error : "...some errors..." }`
 
-  OR
-
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
-
-* **Sample Call:**
-
-  ```javascript
-    $.ajax({
-      url: "/users/1",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
-  ```
-{"mode":"full","isActive":false}
