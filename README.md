@@ -1,6 +1,6 @@
 # REST API
 - [REST API](#rest-api)
-    - [addUser](#addUser)
+    - [Add User](#Add User)
     - [getUserbyID](#getUserbyID)
     - [deleteUserbyID](#deleteUserbyID)
     - [getUsers](#getUsers)
