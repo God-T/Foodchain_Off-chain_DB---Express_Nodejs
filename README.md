@@ -1,11 +1,11 @@
 # REST API
 - [REST API](#rest-api)
-    - [Add-User](#Add-User)
+    - [Add User](#Add-User)
     - [Get-User-by-ID](#Get-User-by-ID)
     - [Delete-User-by-ID](#Delete-User-by-ID)
     - [Get-Users](#Get-Users)
 
-**Add-User**
+**Add User**
 ----
   add a single user data.
 
