@@ -144,48 +144,34 @@
 
   * **Code:** 200 <br />
   * **Content:**
-    ```json
-    {
-        "one": 2,
-        "three": {
-            "point_1": "point_2",
-            "point_3": 3.4
+v    ```json
+    [
+        {
+            "id_address": "0x00000000000001",
+            "name": "RanchFarm AU",
+            "type": "Producer",
+            "location": "Sydney, NSW"
         },
-        "list": [
-            "one",
-            "two",
-            "three"
-        ]
-    }
+        {
+            "id_address": "0x00000000000002",
+            "name": "BeefFactory",
+            "type": "Processor",
+            "location": "Sydney, NSW"
+        } 
+    ]
     ```
-```json
-[
-    {
-        "id_address": "0x00000000000001",
-        "name": "RanchFarm AU",
-        "type": "Producer",
-        "location": "Sydney, NSW"
-    },
-    {
-        "id_address": "0x00000000000002",
-        "name": "BeefFactory",
-        "type": "Processor",
-        "location": "Sydney, NSW"
-    } 
-]
-```
 
  
 * **Error Response:**
 
   * **Code:** 500 <br />
   * **Content:**
-        ```json
-        { 
-            "Message": "Unable to retrieve users", 
-            "Error" : "...some errors..." 
-        }
-        ```
+    ```json
+    { 
+        "Message": "Unable to retrieve users", 
+        "Error" : "...some errors..." 
+    }
+    ```
         
        
     
