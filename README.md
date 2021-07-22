@@ -17,21 +17,21 @@
 
   * **Code:** 200 <br />
   * **Content:** 
-        ```json
-        { 
-            "Message" : "User 0x00000000000001 added" 
-        }
-        ```
+    ```json
+    { 
+        "Message" : "User 0x00000000000001 added" 
+    }
+    ```
  
 * **Error Response:**
 
   * **Code:** 500 <br />
   * **Content:** 
-        ```json
-        { 
-            "Message": "Add user failed",
-            "Error" : "...some errors..."
-        }    
+    ```json
+    { 
+        "Message": "Add user failed",
+        "Error" : "...some errors..."
+    }    
     
     
     
@@ -54,35 +54,35 @@
 
   * **Code:** 200 <br />
   * **Content:** 
-        ```json
-        {
-            "id_address": "0x00000000000001",
-            "name": "RanchFarm AU",
-            "type": "Producer",
-            "location": "Sydney, NSW"
-        }
-        ```
+    ```json
+    {
+        "id_address": "0x00000000000001",
+        "name": "RanchFarm AU",
+        "type": "Producer",
+        "location": "Sydney, NSW"
+    }
+    ```
  
 * **Error Response:**
 
   * **Code:** 500 <br />
   * **Content:** 
-        ```json
-        { 
-            "Message": "Unable to get user 0x00000000000001",
-            "Error" : "...some errors..."
-        }    
-        ```
+    ```json
+    { 
+        "Message": "Unable to get user 0x00000000000001",
+        "Error" : "...some errors..."
+    }    
+    ```
 
   OR
 
   * **Code:** 404 <br />
   * **Content:** 
-        ```json
-        { 
-            "Message" : "No record of user 0x00000000000001" 
-        }    
-        ```
+    ```json
+    { 
+        "Message" : "No record of user 0x00000000000001" 
+    }    
+    ```
     
     
     
@@ -105,31 +105,31 @@
 
   * **Code:** 200 <br />
   * **Content:** 
-        ```json
-        { 
-            "Message": "Delete user 0x00000000000001 successfully 
-        }    
-        ```
+    ```json
+    { 
+        "Message": "Delete user 0x00000000000001 successfully 
+    }    
+    ```
  
 * **Error Response:**
 
   * **Code:** 500 <br />
   * **Content:** 
-        ```json
-        { 
-            "Message": "Unable to delete user 0x00000000000001",
-            "Error" : "...some errors..."
-        }    
-        ```
+    ```json
+    { 
+        "Message": "Unable to delete user 0x00000000000001",
+        "Error" : "...some errors..."
+    }    
+    ```
   OR
 
   * **Code:** 404 <br />
   * **Content:** 
-        ```json
-        { 
-            "Message" : "No record of user 0x00000000000001" 
-        }    
-        ```
+    ```json
+    { 
+        "Message" : "No record of user 0x00000000000001" 
+    }    
+    ```
     
     
 **Get Users**
@@ -144,7 +144,7 @@
 
   * **Code:** 200 <br />
   * **Content:**
-v    ```json
+    ```json
     [
         {
             "id_address": "0x00000000000001",
