@@ -9,7 +9,8 @@
 ----
   add a single user data.
 
-* **URL:** `POST` **/api/user**
+* **URL:** 
+  `POST` /api/user
 
 * **Success Response:**
 
