@@ -89,7 +89,7 @@
 ----
   delete a single user data by given id.
 
-* **`DELETE` /api/user/:idL**
+* **`DELETE`  /api/user/:id**
 
   
 *  **URL Params**
