@@ -96,7 +96,7 @@ get a single user data by given id.
     { 
         "Message" : "No record of user 0x00000000000001" 
     }    
-  ```
+    ```
 
 
 
@@ -117,9 +117,9 @@ delete a single user data by given id.
   * **Content:** 
     ```json
     { 
-        "Message": "Delete user 0x00000000000001 successfully 
+        "Message": "Delete user 0x00000000000001 successfully" 
     }    
-  ```
+    ```
 
 * **Error Response:**
 
