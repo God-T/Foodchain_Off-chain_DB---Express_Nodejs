@@ -59,9 +59,8 @@ get a single user data by given id.
 * **`GET` /api/user/:id**
 
 
-*  **URL Params**
-
-   **Required:**
+*  **URL Params:**
+   
    `id=[0x00000000000001]`
 
 * **Success Response:**
