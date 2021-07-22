@@ -1,4 +1,4 @@
-# Off-chain data storage
+# Off-chain Data Storage Server
 - [Getting Started](#Getting-Started)
 - [REST API](#rest-api)
     - [Add User](#Add-User)
