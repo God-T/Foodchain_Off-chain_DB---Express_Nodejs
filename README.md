@@ -39,9 +39,8 @@
 ----
   get a single user data by given id.
 
-* **URL**
+* **`GET` /api/user/:id**
 
-  `GET` */api/user/:id*
   
 *  **URL Params**
 
@@ -90,9 +89,8 @@
 ----
   delete a single user data by given id.
 
-* **URL**
+* **`DELETE` /api/user/:idL**
 
-  `DELETE` */api/user/:id*
   
 *  **URL Params**
 
@@ -135,9 +133,8 @@
 ----
   add all users.
 
-* **URL**
+* **`GET` /api/user**
 
-  `GET` */api/user*
 
 * **Success Response:**
 
