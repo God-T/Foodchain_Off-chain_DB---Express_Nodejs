@@ -1,14 +1,17 @@
-# Getting Started
-
-
-
-
-# REST API
+- [Getting Started](#Getting-Started)
 - [REST API](#rest-api)
     - [Add User](#Add-User)
     - [Get User by ID](#Get-User-by-ID)
     - [Delete User by ID](#Delete-User-by-ID)
     - [Get Users](#Get-Users)
+
+# Getting Started
+**Add User**
+
+
+
+# REST API
+
 
 **Add User**
 ----
