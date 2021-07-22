@@ -1,9 +1,9 @@
 # REST API
 - [REST API](#rest-api)
     - [Add User](#Add-User)
-    - [Get-User-by-ID](#Get-User-by-ID)
-    - [Delete-User-by-ID](#Delete-User-by-ID)
-    - [Get-Users](#Get-Users)
+    - [Get User by ID](#Get-User-by-ID)
+    - [Delete User by ID](#Delete-User-by-ID)
+    - [Get Users](#Get-Users)
 
 **Add User**
 ----
@@ -27,7 +27,7 @@
     
     
 
-**Get-User-by-ID**
+**Get User by ID**
 ----
   get a single user data by given id.
 
@@ -65,7 +65,7 @@
     
     
     
-**Delete-User-by-ID** 
+**Delete User by ID** 
 ----
   delete a single user data by given id.
 
@@ -98,7 +98,7 @@
     
     
     
-**Get-Users**
+**Get Users**
 ----
   add all users.
 
