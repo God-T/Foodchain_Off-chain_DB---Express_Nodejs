@@ -6,7 +6,7 @@
     - [Delete User by ID](#Delete-User-by-ID)
     - [Get Users](#Get-Users)
 
-# Getting Started
+## Getting Started
 **Install:** 
   ```
   npm install
@@ -20,7 +20,7 @@
   npm start
   ```
 
-# REST API
+## REST API
   Off-chain data storage APIs, DB server running on http://localhost:5000
 
   **Add User**
