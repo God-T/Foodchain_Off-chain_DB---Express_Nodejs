@@ -109,8 +109,9 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-  * **Content:** 
-  `[
+    **Content:** 
+   ```json
+   [
   {
     "id_address": "0x00000000000001",
     "name": "RanchFarm AU",
@@ -122,8 +123,7 @@
     "name": "BeefFactory",
     "type": "Processor",
     "location": "Sydney, NSW"
-  }
-]`
+  } ]```
  
 * **Error Response:**
 
