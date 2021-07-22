@@ -11,7 +11,7 @@
 
 * **URL**
 
-  `POST` */api/user*
+  `POST` **/api/user**
 
 * **Success Response:**
 
