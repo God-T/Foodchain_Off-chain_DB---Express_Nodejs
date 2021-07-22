@@ -132,27 +132,12 @@
   * **Code:** 500 <br />
   * **Content:**
        ```json
-       [
-          {
-            "id_address": "0x00000000000001",
-            "name": "RanchFarm AU",
-            "type": "Producer",
-            "location": "Sydney, NSW"
-          },
-          {
-            "id_address": "0x00000000000002",
-            "name": "BeefFactory",
-            "type": "Processor",
-            "location": "Sydney, NSW"
-          } 
-      ] 
-      ```
-        
-        javascript
-        { 
+       { 
             Message: "Unable to retrieve users", 
             Error : "...some errors..." 
-        }
+       }
+       ```
+        
        
     
         
