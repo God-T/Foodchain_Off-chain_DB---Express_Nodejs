@@ -1,6 +1,6 @@
 # Off-chain Data Storage Server
 - [Getting Started](#Getting-Started)
-- [REST API](#rest-api)
+- [RESTful API](#restful-api)
     - [Add User](#Add-User)
     - [Get User by ID](#Get-User-by-ID)
     - [Delete User by ID](#Delete-User-by-ID)
@@ -20,7 +20,7 @@
   npm start
   ```
 
-# REST API
+# RESTful API
   Off-chain data storage APIs, DB server running on http://localhost:5000
 
 **Add User**
