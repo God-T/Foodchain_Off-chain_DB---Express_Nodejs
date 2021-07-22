@@ -130,6 +130,12 @@
 * **Error Response:**
 
   * **Code:** 500 <br />
-    **Content:** `{ Message: "Unable to retrieve users", Error : "...some errors..." }`
+  * **Content:** 
+        ```json
+        { 
+            Message: "Unable to retrieve users", 
+            Error : "...some errors..." 
+        }
+        ```
     
         
