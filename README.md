@@ -48,7 +48,7 @@ add a single user data.
         "Message": "Add user failed",
         "Error" : "...some errors..."
     }    
-
+    ```
 
 
 
@@ -61,9 +61,8 @@ get a single user data by given id.
 
 *  **URL Params**
 
- **Required:**
-
- `id=[0x00000000000001]`
+   **Required:**
+   `id=[0x00000000000001]`
 
 * **Success Response:**
 
