@@ -24,6 +24,7 @@
   Off-chain data storage APIs, DB server running on http://localhost:5000
 
 **Add User**
+----
 add a single user data.
 
 * **`POST` /api/user** 
@@ -61,7 +62,7 @@ get a single user data by given id.
 
 *  **URL Params:**
    
-   **Required:** `id=[0x00000000000001]`
+     **Required:** `id=[0x00000000000001]`
 
 * **Success Response:**
 
