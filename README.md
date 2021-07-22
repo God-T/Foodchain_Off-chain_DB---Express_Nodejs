@@ -23,8 +23,8 @@
 ## REST API
   Off-chain data storage APIs, DB server running on http://localhost:5000
 
-**Add User**
-----
+### Add User
+
 add a single user data.
 
 * **`POST` /api/user** 
