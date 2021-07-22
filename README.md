@@ -22,8 +22,8 @@
 # REST API
   Off-chain data storage APIs.
 
-**Add User**
-
+### Add User
+---
   add a single user data.
 
 * **`POST` /api/user** 
