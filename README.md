@@ -7,7 +7,7 @@
     - [Get Users](#Get-Users)
 
 ## Getting Started
-**Install:** 
+**# Install:** 
   ```
   npm install
   ```
