@@ -76,16 +76,7 @@ get a single user data by given id.
         "location": "Sydney, NSW"
     }
     ```
-* **Error Response:**
-
-  * **Code:** 500 <br />
-  * **Content:** 
-    ```json
-    { 
-        "Message": "Add user failed",
-        "Error" : "...some errors..."
-    }    
-    ```
+ 
 * **Error Response:**
 
   * **Code:** 500 <br />
@@ -116,7 +107,7 @@ delete a single user data by given id.
 
 * **`DELETE`  /api/user/:id**
 
-*  **URL Params:**
+* **URL Params:**
 
   * **Required:** `id=[0x00000000000001]`
 
