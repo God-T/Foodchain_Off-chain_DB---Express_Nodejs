@@ -6,12 +6,21 @@
     - [Get Users](#Get-Users)
 
 # Getting Started
-**Add User**
-
-
+**Install:** 
+  ```
+  npm install
+  ```
+**Init DB:** 
+  ```
+  npm run db-init
+  ```
+**Run server:** 
+  ```
+  npm start
+  ```
 
 # REST API
-
+  Off-chain data storage APIs.
 
 **Add User**
 ----
