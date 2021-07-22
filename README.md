@@ -42,7 +42,7 @@
 
 * **URL**
 
-  `GET` */api/user/:id
+  `GET` */api/user/:id*
   
 *  **URL Params**
 
@@ -93,7 +93,7 @@
 
 * **URL**
 
-  `DELETE` */api/user/:id
+  `DELETE` */api/user/:id*
   
 *  **URL Params**
 
@@ -138,7 +138,7 @@
 
 * **URL**
 
-  `GET` */api/user
+  `GET` */api/user*
 
 * **Success Response:**
 
