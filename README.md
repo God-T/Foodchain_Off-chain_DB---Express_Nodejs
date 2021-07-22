@@ -7,7 +7,7 @@
 
 **addUser**
 ----
-  add a user.
+  add a single user data.
 
 * **URL**
 
@@ -29,7 +29,7 @@
 
 **getUserbyID**
 ----
-  get user data by given id.
+  get a single user data by given id.
 
 * **URL**
 
@@ -67,7 +67,7 @@
     
 **deleteUserbyID** 
 ----
-  delete user data by given id.
+  delete a single user data by given id.
 
 * **URL**
 
@@ -98,4 +98,35 @@
     
     
     
+**getUsers**
+----
+  add all users.
+
+* **URL**
+
+  `GET` /api/user
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `[
+  {
+    "id_address": "0x00000000000001",
+    "name": "RanchFarm AU",
+    "type": "Producer",
+    "location": "Sydney, NSW"
+  },
+  {
+    "id_address": "0x00000000000002",
+    "name": "BeefFactory",
+    "type": "Processor",
+    "location": "Sydney, NSW"
+  }
+]`
+ 
+* **Error Response:**
+
+  * **Code:** 500 <br />
+    **Content:** `{ Message: "Unable to retrieve users", Error : "...some errors..." }`
     
+        
