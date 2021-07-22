@@ -131,7 +131,7 @@
 
   * **Code:** 500 <br />
   * **Content:** 
-        ```json
+        ```javascript
         { 
             Message: "Unable to retrieve users", 
             Error : "...some errors..." 
