@@ -8,5 +8,5 @@
 
 
 ## REST API
-    # addUsers
+### addUsers
 
