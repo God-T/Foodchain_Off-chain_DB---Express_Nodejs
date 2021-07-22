@@ -16,13 +16,22 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ Message : "User 0x00000000000001 added" }`
+  * **Content:** 
+        ```json
+        { 
+            "Message" : "User 0x00000000000001 added" 
+        }
+        ```
  
 * **Error Response:**
 
   * **Code:** 500 <br />
-    **Content:** `{ Message: "Add user failed", Error : "...some errors..." }`
-    
+  * **Content:** 
+        ```json
+        { 
+            "Message": "Add user failed",
+            "Error" : "...some errors..."
+        }    
     
     
     
@@ -44,23 +53,36 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{
-                   "id_address": "0x00000000000001",
-                   "name": "RanchFarm AU",
-                   "type": "Producer",
-                   "location": "Sydney, NSW"
-                  }`
+  * **Content:** 
+        ```json
+        {
+            "id_address": "0x00000000000001",
+            "name": "RanchFarm AU",
+            "type": "Producer",
+            "location": "Sydney, NSW"
+        }
+        ```
  
 * **Error Response:**
 
   * **Code:** 500 <br />
-    **Content:** `{ Message: "Unable to get user 0x00000000000001", Error : "...some errors..." }` 
+  * **Content:** 
+        ```json
+        { 
+            "Message": "Unable to get user 0x00000000000001",
+            "Error" : "...some errors..."
+        }    
+        ```
 
   OR
 
   * **Code:** 404 <br />
-    **Content:** `{ Message : "No record of user 0x00000000000001" }`
-    
+  * **Content:** 
+        ```json
+        { 
+            "Message" : "No record of user 0x00000000000001" 
+        }    
+        ```
     
     
     
@@ -82,20 +104,32 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{
-                    Message: "Delete user 0x00000000000001 successfully"
-                  }`
+  * **Content:** 
+        ```json
+        { 
+            "Message": "Delete user 0x00000000000001 successfully 
+        }    
+        ```
  
 * **Error Response:**
 
   * **Code:** 500 <br />
-    **Content:** `{ Message: "Unable to delete user 0x00000000000001", Error : "...some errors..." }` 
-
+  * **Content:** 
+        ```json
+        { 
+            "Message": "Unable to delete user 0x00000000000001",
+            "Error" : "...some errors..."
+        }    
+        ```
   OR
 
   * **Code:** 404 <br />
-    **Content:** `{ Message : "No record of user 0x00000000000001" }`    
-    
+  * **Content:** 
+        ```json
+        { 
+            "Message" : "No record of user 0x00000000000001" 
+        }    
+        ```
     
     
 **Get Users**
@@ -110,33 +144,33 @@
 
   * **Code:** 200 <br />
   * **Content:** 
-       ```json
-       [
-          {
-            "id_address": "0x00000000000001",
-            "name": "RanchFarm AU",
-            "type": "Producer",
-            "location": "Sydney, NSW"
-          },
-          {
-            "id_address": "0x00000000000002",
-            "name": "BeefFactory",
-            "type": "Processor",
-            "location": "Sydney, NSW"
-          } 
-      ]
-      ```
+        ```json
+        [
+            {
+                "id_address": "0x00000000000001",
+                "name": "RanchFarm AU",
+                "type": "Producer",
+                "location": "Sydney, NSW"
+            },
+            {
+                "id_address": "0x00000000000002",
+                "name": "BeefFactory",
+                "type": "Processor",
+                "location": "Sydney, NSW"
+            } 
+        ]
+        ```
  
 * **Error Response:**
 
   * **Code:** 500 <br />
   * **Content:**
-       ```json
-       { 
+        ```json
+        { 
             "Message": "Unable to retrieve users", 
             "Error" : "...some errors..." 
-       }
-       ```
+        }
+        ```
         
        
     
