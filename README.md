@@ -8,9 +8,7 @@
 
 
 ## REST API
-### addUsers
-
-**Show User**
+**addUsers**
 ----
   Returns json data about a single user.
 
