@@ -109,7 +109,7 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `[
+  * **Content:** `[
   {
     "id_address": "0x00000000000001",
     "name": "RanchFarm AU",
@@ -122,7 +122,7 @@
     "type": "Processor",
     "location": "Sydney, NSW"
   }
-]`
+]`<br />
  
 * **Error Response:**
 
