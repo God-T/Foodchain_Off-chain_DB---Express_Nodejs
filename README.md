@@ -62,7 +62,7 @@ get a single user data by given id.
 
 *  **URL Params:**
    
-     **Required:** `id=[0x00000000000001]`
+  * **Required:** `id=[0x00000000000001]`
 
 * **Success Response:**
 
@@ -107,12 +107,9 @@ delete a single user data by given id.
 
 * **`DELETE`  /api/user/:id**
 
+*  **URL Params:**
 
-*  **URL Params**
-
-  **Required:**
-
-  `id=[0x00000000000001]`
+  * **Required:** `id=[0x00000000000001]`
 
 * **Success Response:**
 
