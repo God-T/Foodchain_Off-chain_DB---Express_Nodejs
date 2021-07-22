@@ -133,8 +133,8 @@
   * **Content:**
        ```json
        { 
-            Message: "Unable to retrieve users", 
-            Error : "...some errors..." 
+            "Message": "Unable to retrieve users", 
+            "Error" : "...some errors..." 
        }
        ```
         
