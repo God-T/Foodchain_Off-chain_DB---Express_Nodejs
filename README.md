@@ -1,13 +1,9 @@
-# Foodchain_Off-chain_DB---Express_Nodejs
-
+# REST API
 - [REST API](#rest-api)
     - [addUser](#addUser)
     - [getUserbyID](#getUserbyID)
     - [deleteUserbyID](#deleteUserbyID)
     - [getUsers](#getUsers)
-
-
-# REST API
 
 **addUser**
 ----
@@ -69,7 +65,7 @@
     
     
     
-**deleteUserbyID**
+**deleteUserbyID `DELETE`** 
 ----
   delete user data by given id.
 
