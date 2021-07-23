@@ -14,6 +14,7 @@ exports.up = function (knex) {
       table
         .integer("certification_id")
         .unsigned()
+        .unique()
         .notNullable()
         .references("id")
         .inTable("certification")
@@ -21,7 +22,7 @@ exports.up = function (knex) {
     })
 
     .createTable("document", (table) => {
-      table.string("hash_value").primary();
+      table.string("hash_value").unique().primary();
       table.string("document").notNullable();
       table
         .integer("certification_id")

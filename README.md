@@ -2,6 +2,8 @@
 
 - [Getting Started](#Getting-Started)
 - [REST API](#rest-api)
+  - [Add Certification](#Add-Certification)
+  - [Get Certification by ID](#Get-Certification-by-ID)
   - [Add User](#Add-User)
   - [Get User by ID](#Get-User-by-ID)
   - [Delete User by ID](#Delete-User-by-ID)
@@ -39,11 +41,85 @@ npm start
 
 Off-chain data storage APIs, DB server running on http://localhost:5000
 
+## **Add Certification**
+
+add a single certification data.
+
+- **`POST` /api/certification**
+
+- **Success Response:**
+
+  - **Code:** 200 <br />
+  - **Content:**
+    ```json
+    {
+      "Message": "Certification added",
+      "certification_id": "1"
+    }
+    ```
+
+- **Error Response:**
+
+  - **Code:** 500 <br />
+  - **Content:**
+    ```json
+    {
+      "Message": "Add certification failed",
+      "Error": "...some errors..."
+    }
+    ```
+
+## **Get Certification by ID**
+
+get a single certification data by given id.
+
+- **`GET` /api/certification/:id**
+
+- **URL Params:**
+
+  - **Required:** `id=[Integer]`
+
+- **Success Response:**
+
+  - **Code:** 200 <br />
+  - **Content:**
+    ```json
+    {
+      "id": "1",
+      "certifier": "Hotpot Team"
+    }
+    ```
+
+- **Error Response:**
+
+  - **Code:** 500 <br />
+  - **Content:**
+    ```json
+    {
+      "Message": "Unable to get certification 1",
+      "Error": "...some errors..."
+    }
+    ```
+
+  OR
+
+  - **Code:** 404 <br />
+  - **Content:**
+    ```json
+    {
+      "Message": "No record of certification 0x00000000000001"
+    }
+    ```
+
 ## **Add User**
 
 add a single user data.
 
-- **`POST` /api/user**
+- **`POST` /api/certification/:id/user**
+
+- **URL Params:**
+
+  - **Required:** `id=[Integer]`
 
 - **Success Response:**
 
