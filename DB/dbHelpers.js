@@ -7,6 +7,7 @@ module.exports = {
   getUsers,
   getUserbyID,
   deleteUserbyID,
+  updateUserbyID,
 };
 
 function addUser(user) {
@@ -23,4 +24,8 @@ function getUserbyID(id_address) {
 
 function deleteUserbyID(id_address) {
   return db("user").where({ id_address }).del();
+}
+
+function updateUserbyID(id_address, changes) {
+  return db("user").where({ id_address }).update(changes, [id_address]);
 }

@@ -70,3 +70,22 @@ server.delete("/api/user/:id", (req, res) => {
         .json({ Message: `Unable to delete user ${id}`, Error: e });
     });
 });
+
+// update user by id
+server.patch("/api/user/:id", (req, res) => {
+  const { id } = req.params;
+  const changes = req.body;
+  db.updateUserbyID(id, changes)
+    .then((user) => {
+      if (user) {
+        res.status(200).json({ Message: `Update user ${id} successfully` });
+      } else {
+        res.status(404).json({ Message: `No record of user ${id}` });
+      }
+    })
+    .catch((e) => {
+      res
+        .status(500)
+        .json({ Message: `Unable to update user ${id}`, Error: e });
+    });
+});
