@@ -12,6 +12,8 @@
 
 # Getting Started
 
+**_Remember to cd to source/db_server first_**
+
 **Install:**
 
 ```
