@@ -12,7 +12,7 @@
 
 # Getting Started
 
-**_Remember to cd to source/db_server first_**
+**_\*Note that cd to source/db_server first_**
 
 **Install:**
 
@@ -26,16 +26,20 @@ npm install
 npm run db-init
 ```
 
-**Reset DB:**
-
-```
-npm run db-reset
-```
-
 **Run server:**
 
 ```
 npm start
+```
+
+# Dev Script
+
+**_\*Use to reset and update the db with lastest server version, ori db data will be wiped out_**
+
+**Reset DB:**
+
+```
+npm run db-reset
 ```
 
 # REST API
