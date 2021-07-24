@@ -1,6 +1,6 @@
 # Off-chain Data Storage Server
 
-![Alt text](/er.png?raw=true "ER Diagram")
+![Alt text](/er.jpg?raw=true "ER Diagram")
 
 - [Getting Started](#Getting-Started)
 - [REST API](#rest-api)
