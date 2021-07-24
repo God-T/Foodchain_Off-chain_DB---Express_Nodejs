@@ -8,9 +8,6 @@
   - [Add Document by User ID](#Add-Documents-by-User-ID)
   - [Get Documents by User ID](#Get-Documents-by-User-ID)
   - [Get Documents by Hash](#Get-Documents-by-Hash)
-  - [Delete User by ID](#Delete-User-by-ID)
-  - [Update User by ID](#Update-User-by-ID)
-  - [Get Users](#Get-Users)
   - Unfinished...
 
 # Getting Started
@@ -184,7 +181,7 @@ add a single document data by user id_address.
 
 get a single documents data by user id_address.
 
-- **`POST` /api/user/:id_address/document**
+- **`GET` /api/user/:id_address/document**
 
 - **URL Params:**
 
@@ -194,139 +191,8 @@ get a single documents data by user id_address.
 
 get a single documents by document hash_value.
 
-- **`POST` /api/document/:hash_value**
+- **`GET` /api/document/:hash_value**
 
 - **URL Params:**
 
   - **Required:** `id_address=[Integer]`
-
-## **Delete User by ID**
-
-delete a single user data by given id.
-
-- **`DEL` /api/user/:id**
-
-- **URL Params:**
-
-  - **Required:** `id=[0x00000000000001]`
-
-- **Success Response:**
-
-  - **Code:** 200 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "Delete user 0x00000000000001 successfully"
-    }
-    ```
-
-- **Error Response:**
-
-  - **Code:** 500 <br />
-  - **Content:**
-
-    ```json
-    {
-      "Message": "Unable to delete user 0x00000000000001",
-      "Error": "...some errors..."
-    }
-    ```
-
-    OR
-
-  - **Code:** 404 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "No record of user 0x00000000000001"
-    }
-    ```
-
-## **Update User by ID**
-
-update a single user data by given id.
-
-- **`PTCH` /api/user/:id**
-
-- **URL Params:**
-
-  - **Required:** `id=[0x00000000000001]`
-
-- **Body Params:**
-
-  - **Optional:**
-    ```json
-    {
-      "columns to update": "...updated value..."
-    }
-    ```
-
-- **Success Response:**
-
-  - **Code:** 200 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "Update user 0x00000000000001 successfully"
-    }
-    ```
-
-- **Error Response:**
-
-  - **Code:** 500 <br />
-  - **Content:**
-
-    ```json
-    {
-      "Message": "Unable to update user 0x00000000000001",
-      "Error": "...some errors..."
-    }
-    ```
-
-    OR
-
-  - **Code:** 404 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "No record of user 0x00000000000001"
-    }
-    ```
-
-## **Get Users**
-
-add all users.
-
-- **`GET` /api/user**
-
-- **Success Response:**
-
-  - **Code:** 200 <br />
-  - **Content:**
-    ```json
-    [
-      {
-        "id_address": "0x00000000000001",
-        "name": "RanchFarm AU",
-        "type": "Producer",
-        "location": "Sydney, NSW"
-      },
-      {
-        "id_address": "0x00000000000002",
-        "name": "BeefFactory",
-        "type": "Processor",
-        "location": "Sydney, NSW"
-      }
-    ]
-    ```
-
-- **Error Response:**
-
-  - **Code:** 500 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "Unable to retrieve users",
-      "Error": "...some errors..."
-    }
-    ```
