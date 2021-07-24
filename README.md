@@ -271,13 +271,22 @@ get all journeies data by given beef id.
   - **Code:** 200 <br />
   - **Content:**
     ```json
-    {
-      "product_id": "0x00000000000001:beef",
-      "user_id": "0x00000000000001:user",
-      "start_date": "24-07-2021 00:01",
-      "end_date": "24-07-2021 00:02",
-      "produce_info": "...some info..."
-    }
+    [
+      {
+        "product_id": "0x00000000000001:beef",
+        "user_id": "0x00000000000001:user",
+        "start_date": "24-07-2021 00:01",
+        "end_date": "24-07-2021 00:02",
+        "produce_info": "...some info..."
+      },
+      {
+        "product_id": "0x00000000000001:beef",
+        "user_id": "0x00000000000002:user",
+        "start_date": "24-07-2021 00:03",
+        "end_date": "24-07-2021 00:04",
+        "produce_info": "...some info..."
+      }
+    ]
     ```
 
 - **Error Response:**
@@ -301,9 +310,9 @@ get all journeies data by given beef id.
     }
     ```
 
-## **Finish Journey by IDs**
+## **Finish Journey**
 
-get all journeies data by given beef id.
+set journey status with end.
 
 - **`GET` /api/journey/:product_id&:id_address**
 
