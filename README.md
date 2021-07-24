@@ -56,7 +56,7 @@ add a single user data.
     "id_address": "0x00000000000001",
     "name": "RanchFarm AU",
     "type": "Producer",
-    "location": "Sydney, NSW"
+    "location": "Sydney, NSW",
     "certifier": "some certifier"
   }
   ```
@@ -79,7 +79,7 @@ get a single certification data by given id.
 
 - **URL Params:**
 
-  - **Required:** `id_address=[Integer]`
+  - **Required:** `id_address=[0x00000000000001]`
 
 ## **Add Document by User ID**
 
@@ -89,7 +89,7 @@ add a single document data by user id_address.
 
 - **URL Params:**
 
-  - **Required:** `id_address=[Integer]`
+  - **Required:** `id_address=[0x00000000000001]`
 
 - **Request Body:**
   ```json
@@ -107,7 +107,7 @@ get a single documents data by user id_address.
 
 - **URL Params:**
 
-  - **Required:** `id_address=[Integer]`
+  - **Required:** `id_address=[0x00000000000001]`
 
 ## **Get Documents by Hash**
 
@@ -117,4 +117,4 @@ get a single documents by document hash_value.
 
 - **URL Params:**
 
-  - **Required:** `id_address=[Integer]`
+  - **Required:** `hash_value=[text]`
