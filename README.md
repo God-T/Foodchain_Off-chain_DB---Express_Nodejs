@@ -49,7 +49,7 @@ add a single user data registered by given certifier.
 - **URL Params:**
 
   - **Required:** `certifier=[text]`
-  - **Example:** `hash_value = "some certifier..."`
+  - **Example:** `certifier = "some certifier..."`
 
 - **Request Body:**
   ```json
@@ -91,7 +91,7 @@ get a single user data by given user id_address.
 - **URL Params:**
 
   - **Required:** `id_address=[text]`
-  - **Example:** `hash_value = "0x00000000000001"`
+  - **Example:** `id_address = "0x00000000000001"`
 
 - **Success Response:**
 
@@ -136,7 +136,7 @@ get a single certification data for a user with given user id_address.
 - **URL Params:**
 
   - **Required:** `id_address=[text]`
-  - **Example:** `hash_value = "0x00000000000001"`
+  - **Example:** `id_address = "0x00000000000001"`
 
 - **Success Response:**
 
@@ -189,7 +189,7 @@ add a single document data of a user certification with the given user id_addres
 - **URL Params:**
 
   - **Required:** `id_address=[text]`
-  - **Example:** `hash_value = "0x00000000000001"`
+  - **Example:** `id_address = "0x00000000000001"`
 
 - **Request Body:**
 
@@ -250,7 +250,7 @@ get all documents data of a user with given id_address.
 - **URL Params:**
 
   - **Required:** `id_address=[text]`
-  - **Example:** `hash_value = "0x00000000000001"`
+  - **Example:** `id_address = "0x00000000000001"`
 
 - **Success Response:**
 
