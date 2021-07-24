@@ -110,7 +110,9 @@ get a single user data by given user id_address.
       "id_address": "0x00000000000001",
       "name": "RanchFarm AU",
       "type": "Producer",
-      "location": "Sydney, NSW"
+      "location": "Sydney, NSW",
+      "certifier": "some certifier",
+      "hash_value": "LS913278DHAS8DH78..."
     }
     ```
 
