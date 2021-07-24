@@ -1,7 +1,7 @@
 # Off-chain Data Storage Server
 
-![Alt text](/er.jpg?raw=true "ER Diagram")
 
+- [Design Pattern](#Design-Pattern)
 - [Getting Started](#Getting-Started)
 - [REST API](#rest-api)
   - [Add User](#Add-User)
@@ -12,6 +12,10 @@
   - [Get Journeies by IDs](#Get-Journeies-by-IDs)
   - [Finish Journey](#Finish-Journey)
 
+
+# Design Pattern
+ ![Alt text](/er.jpg?raw=true "ER Diagram")
+ 
 # Getting Started
 
 **_\*Note that cd to source/db_server first_**
