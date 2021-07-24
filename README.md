@@ -2,10 +2,12 @@
 
 - [Getting Started](#Getting-Started)
 - [REST API](#rest-api)
-  - [Add Certification](#Add-Certification)
-  - [Get Certification by ID](#Get-Certification-by-ID)
-  - [Add User](#Add-User)
+  - [Add User with Certification](#Add-User-with-Certification)
   - [Get User by ID](#Get-User-by-ID)
+  - [Get Certification by User ID](#Get-Certification-by-User-ID)
+  - [Add Document by User ID](#Add-Documents-by-User-ID)
+  - [Get Documents by User ID](#Get-Documents-by-User-ID)
+  - [Get Documents by Hash](#Get-Documents-by-Hash)
   - [Delete User by ID](#Delete-User-by-ID)
   - [Update User by ID](#Update-User-by-ID)
   - [Get Users](#Get-Users)
@@ -41,85 +43,15 @@ npm start
 
 Off-chain data storage APIs, DB server running on http://localhost:5000
 
-## **Add Certification**
-
-add a single certification data.
-
-- **`POST` /api/certification**
-
-- **Success Response:**
-
-  - **Code:** 200 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "Certification added",
-      "certification_id": "1"
-    }
-    ```
-
-- **Error Response:**
-
-  - **Code:** 500 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "Add certification failed",
-      "Error": "...some errors..."
-    }
-    ```
-
-## **Get Certification by ID**
-
-get a single certification data by given id.
-
-- **`GET` /api/certification/:id**
-
-- **URL Params:**
-
-  - **Required:** `id=[Integer]`
-
-- **Success Response:**
-
-  - **Code:** 200 <br />
-  - **Content:**
-    ```json
-    {
-      "id": "1",
-      "certifier": "Hotpot Team"
-    }
-    ```
-
-- **Error Response:**
-
-  - **Code:** 500 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "Unable to get certification 1",
-      "Error": "...some errors..."
-    }
-    ```
-
-  OR
-
-  - **Code:** 404 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "No record of certification 0x00000000000001"
-    }
-    ```
-
-## **Add User**
+## **Add User with Certification**
 
 add a single user data.
 
-- **`POST` /api/certification/:id/user**
+- **`POST` /api/user/:certifier**
 
 - **URL Params:**
 
-  - **Required:** `id=[Integer]`
+  - **Required:** `certifier=[some certifier]`
 
 - **Success Response:**
 
@@ -127,7 +59,7 @@ add a single user data.
   - **Content:**
     ```json
     {
-      "Message": "User 0x00000000000001 added"
+      "Message": "Add user 0x00000000000001 with Certification 1 successfully"
     }
     ```
 
@@ -137,7 +69,7 @@ add a single user data.
   - **Content:**
     ```json
     {
-      "Message": "Add user failed",
+      "Message": "Add user failed, may need rollback for certification table...",
       "Error": "...some errors..."
     }
     ```
@@ -146,11 +78,11 @@ add a single user data.
 
 get a single user data by given id.
 
-- **`GET` /api/user/:id**
+- **`GET` /api/user/:id_address**
 
 - **URL Params:**
 
-  - **Required:** `id=[0x00000000000001]`
+  - **Required:** `id_address =[0x00000000000001]`
 
 - **Success Response:**
 
@@ -185,6 +117,88 @@ get a single user data by given id.
       "Message": "No record of user 0x00000000000001"
     }
     ```
+
+## **Get Certification by User ID**
+
+get a single certification data by given id.
+
+- **`GET` /api/user/:id_address/certification**
+
+- **URL Params:**
+
+  - **Required:** `id_address=[Integer]`
+
+- **Success Response:**
+
+  - **Code:** 200 <br />
+  - **Content:**
+    ```json
+    {
+      "id": "1",
+      "certifier": "some certifier"
+    }
+    ```
+
+- **Error Response:**
+
+  - **Code:** 500 <br />
+  - **Content:**
+    ```json
+    {
+      "Message": "Unable to get certification 1 with user 0x00000000000001",
+      "Error": "...some errors..."
+    }
+    ```
+
+  OR
+
+  - **Code:** 404 <br />
+  - **Content:**
+    ```json
+    {
+      "Message": "No record of user 0x00000000000001"
+    }
+    ```
+
+  OR
+
+  - **Code:** 404 <br />
+  - **Content:**
+    ```json
+    {
+      "Message": "No record of certification 1 with user 0x00000000000001"
+    }
+    ```
+
+## **Add Document by User ID**
+
+add a single document data by user id_address.
+
+- **`POST` /api/user/:id_address/document**
+
+- **URL Params:**
+
+  - **Required:** `id_address=[Integer]`
+
+## **Get Documents by User ID**
+
+get a single documents data by user id_address.
+
+- **`POST` /api/user/:id_address/document**
+
+- **URL Params:**
+
+  - **Required:** `id_address=[Integer]`
+
+## **Get Documents by Hash**
+
+get a single documents by document hash_value.
+
+- **`POST` /api/document/:hash_value**
+
+- **URL Params:**
+
+  - **Required:** `id_address=[Integer]`
 
 ## **Delete User by ID**
 
