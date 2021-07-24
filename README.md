@@ -66,7 +66,7 @@ add a single user data registered by given certifier.
     "type": "Producer",
     "location": "Sydney, NSW",
     "certifier": "some certifier",
-    "hash_value": "LS913278DHAS8DH78..."
+    "document_hash": "LS913278DHAS8DH78..."
   }
   ```
 - **Success Response:**
@@ -112,7 +112,7 @@ get a single user data by given user id_address.
       "type": "Producer",
       "location": "Sydney, NSW",
       "certifier": "some certifier",
-      "hash_value": "LS913278DHAS8DH78..."
+      "document_hash": "LS913278DHAS8DH78..."
     }
     ```
 
