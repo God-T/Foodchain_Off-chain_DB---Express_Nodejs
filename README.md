@@ -50,26 +50,16 @@ add a single user data.
 
   - **Required:** `certifier=[some certifier]`
 
-- **Success Response:**
-
-  - **Code:** 200 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "Add user 0x00000000000001 with Certification 1 successfully"
-    }
-    ```
-
-- **Error Response:**
-
-  - **Code:** 500 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "Add user failed, may need rollback for certification table...",
-      "Error": "...some errors..."
-    }
-    ```
+- **Request Body:**
+  ```json
+  {
+    "id_address": "0x00000000000001",
+    "name": "RanchFarm AU",
+    "type": "Producer",
+    "location": "Sydney, NSW"
+    "certifier": "some certifier"
+  }
+  ```
 
 ## **Get User by ID**
 
@@ -81,40 +71,6 @@ get a single user data by given id.
 
   - **Required:** `id_address =[0x00000000000001]`
 
-- **Success Response:**
-
-  - **Code:** 200 <br />
-  - **Content:**
-    ```json
-    {
-      "id_address": "0x00000000000001",
-      "name": "RanchFarm AU",
-      "type": "Producer",
-      "location": "Sydney, NSW"
-    }
-    ```
-
-- **Error Response:**
-
-  - **Code:** 500 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "Unable to get user 0x00000000000001",
-      "Error": "...some errors..."
-    }
-    ```
-
-  OR
-
-  - **Code:** 404 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "No record of user 0x00000000000001"
-    }
-    ```
-
 ## **Get Certification by User ID**
 
 get a single certification data by given id.
@@ -125,48 +81,6 @@ get a single certification data by given id.
 
   - **Required:** `id_address=[Integer]`
 
-- **Success Response:**
-
-  - **Code:** 200 <br />
-  - **Content:**
-    ```json
-    {
-      "id": "1",
-      "certifier": "some certifier"
-    }
-    ```
-
-- **Error Response:**
-
-  - **Code:** 500 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "Unable to get certification 1 with user 0x00000000000001",
-      "Error": "...some errors..."
-    }
-    ```
-
-  OR
-
-  - **Code:** 404 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "No record of user 0x00000000000001"
-    }
-    ```
-
-  OR
-
-  - **Code:** 404 <br />
-  - **Content:**
-    ```json
-    {
-      "Message": "No record of certification 1 with user 0x00000000000001"
-    }
-    ```
-
 ## **Add Document by User ID**
 
 add a single document data by user id_address.
@@ -176,6 +90,14 @@ add a single document data by user id_address.
 - **URL Params:**
 
   - **Required:** `id_address=[Integer]`
+
+- **Request Body:**
+  ```json
+  {
+    "hash_value" : "SAJD890213H78...",
+    "document" : "...legal doc signed by ...."
+  }
+  ```
 
 ## **Get Documents by User ID**
 
