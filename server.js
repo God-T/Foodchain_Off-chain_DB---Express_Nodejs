@@ -128,15 +128,16 @@ server.get("/api/user/:id_address/certification", (req, res) => {
     })
     .catch((e) => {
       res.status(500).json({
-        Message: `Unable to get certification ${certification_id} with user ${id_address}`,
+        Message: `Unable to get certification with user ${id_address}`,
         Error: e,
       });
     });
 });
 
 // add user with certification
-server.post("/api/user/:certifier", (req, res) => {
-  db.addCertification(req.params)
+server.post("/api/user", (req, res) => {
+  const { id_address, type, name, location, certifier, hash } = req.body;
+  db.addCertification()
     .then((certification_id) => {
       db.addUser({ ...req.body, certification_id }).then(() => {
         res.status(200).json({
