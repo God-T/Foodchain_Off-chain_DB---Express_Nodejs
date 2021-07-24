@@ -316,7 +316,7 @@ get all journeies data by given beef id.
 
 set journey status with end.
 
-- **`GET` /api/journey/:product_id&:id_address**
+- **`PTCH` /api/journey/:product_id&:id_address**
 
 - **URL Params:**
 
