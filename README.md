@@ -1,6 +1,7 @@
 # Off-chain Data Storage Server
 
 - [Getting Started](#Getting-Started)
+- [Other Scripts](#Other-Scripts)
 - [REST API](#rest-api)
   - [Add User with Certification](#Add-User-with-Certification)
   - [Get User by ID](#Get-User-by-ID)
@@ -32,7 +33,7 @@ npm run db-init
 npm start
 ```
 
-----
+# Other Scripts
 
 **_\*Use to reset and update the db with lastest server version, ori db data will be wiped out_**
 
