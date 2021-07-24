@@ -32,7 +32,7 @@ npm run db-init
 npm start
 ```
 
-# Dev Script
+----
 
 **_\*Use to reset and update the db with lastest server version, ori db data will be wiped out_**
 
