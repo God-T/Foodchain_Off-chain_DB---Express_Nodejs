@@ -324,6 +324,7 @@ set journey status with end.
     `id_address = "0x00000000000001"`
 
 - **Request Body:**
+  <<<<<<< HEAD
 
   ```json
   {
