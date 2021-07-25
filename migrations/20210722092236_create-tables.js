@@ -10,8 +10,8 @@ exports.up = function (knex) {
 
       .createTable("user", (table) => {
         table.string("id_address").primary();
-        table.string("name").notNullable();
-        table.string("type").notNullable();
+        table.string("name");
+        table.string("type");
         table.string("location");
         table.string("certifier");
         table.string("document_hash");
@@ -34,21 +34,18 @@ exports.up = function (knex) {
       .createTable("journey", (table) => {
         table
           .string("product_id")
-          .unique()
           .notNullable()
           .references("product_id")
           .inTable("beef_product")
           .onDelete("CASCADE"); // foreign key to beef table
         table
           .string("user_id")
-          .unique()
           .notNullable()
           .references("id_address")
           .inTable("user")
           .onDelete("CASCADE"); // foreign key to user table
         table.string("start_date");
         table.string("end_date");
-        table.boolean("end_status");
         table.string("produce_info");
       })
   );

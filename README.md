@@ -1,6 +1,5 @@
 # Off-chain Data Storage Server
 
-
 - [Design Pattern](#Design-Pattern)
 - [Getting Started](#Getting-Started)
 - [REST API](#rest-api)
@@ -12,10 +11,10 @@
   - [Get Journeies by IDs](#Get-Journeies-by-IDs)
   - [Finish Journey](#Finish-Journey)
 
-
 # Design Pattern
- ![Alt text](/er.jpg?raw=true "ER Diagram")
- 
+
+![Alt text](https://github.com/God-T/Foodchain_Off-chain_DB---Express_Nodejs/blob/main/er.jpg?raw=true "ER Diagram")
+
 # Getting Started
 
 **_\*Note that cd to source/db_server first_**
@@ -232,7 +231,6 @@ add a single journey data by farm user.
     "product_id": "0x00000000000001:beef",
     "user_id": "0x00000000000001:user",
     "start_date": "24-07-2021 00:01",
-    "end_date": "24-07-2021 00:02",
     "produce_info": "...some info..."
   }
   ```
@@ -285,7 +283,7 @@ get all journeies data by given beef id.
         "product_id": "0x00000000000001:beef",
         "user_id": "0x00000000000002:user",
         "start_date": "24-07-2021 00:03",
-        "end_date": "24-07-2021 00:04",
+        "end_date": "",
         "produce_info": "...some info..."
       }
     ]
@@ -324,6 +322,14 @@ set journey status with end.
     `id_address=[text]`
   - **Example:** `product_id = "0x00000000000001"`
     `id_address = "0x00000000000001"`
+
+- **Request Body:**
+
+  ```json
+  {
+    "end_date": "24-07-2021 00:02"
+  }
+  ```
 
 - **Success Response:**
 

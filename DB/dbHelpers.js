@@ -11,7 +11,7 @@ module.exports = {
   // getCertificationbyID,
   // getCertifications,
   addBeefProduct,
-  getBeefProduct,
+  getBeefProductbyID,
   addJourney,
   getJourneiesofBeefProduct,
   finishJourney,
@@ -29,7 +29,7 @@ async function addBeefProduct(beef_product) {
 }
 
 //in use
-function getBeefProduct(product_id) {
+function getBeefProductbyID(product_id) {
   return db("beef_product").where({ product_id });
 }
 
@@ -47,7 +47,9 @@ function getJourneiesofBeefProduct(product_id) {
 
 //in use
 function finishJourney(product_id, user_id, changes) {
-  return db("journey").where({ product_id, user_id }).update(changes);
+  return db("journey")
+    .where({ product_id, user_id })
+    .update(changes, [product_id]);
 }
 
 // //Doc:
