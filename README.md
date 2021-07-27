@@ -13,7 +13,7 @@
 
 # Design Pattern
 
-![Alt text](https://github.com/God-T/Foodchain_Off-chain_DB---Express_Nodejs/blob/main/er.jpg?raw=true "ER Diagram")
+![Alt text](https://github.com/God-T/Foodchain_Off-chain_DB---Express_Nodejs/blob/main/design.png?raw=true "ER Diagram")
 
 # Getting Started
 
